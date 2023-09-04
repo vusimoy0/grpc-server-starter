@@ -11,6 +11,7 @@ val protoc_version = "3.23.4"
 val proto_util_version = "3.22.3"
 val grpc_version = "1.55.1"
 val tomcat_annotations_version = "6.0.53"
+val firebaseVersion = "9.2.0"
 
 plugins {
     kotlin("jvm") version "1.9.10"
@@ -37,6 +38,7 @@ repositories {
 dependencies {
     implementation("io.ktor:ktor-server-core-jvm")
     implementation("io.ktor:ktor-server-cio-jvm")
+    implementation("com.google.firebase:firebase-admin:$firebaseVersion")
     implementation("ch.qos.logback:logback-classic:$logback_version")
     testImplementation("io.ktor:ktor-server-tests-jvm")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
